@@ -1,0 +1,30 @@
+<div class="ai-team-box" (click)="play()">
+    <img src="{{team.crestUrl}}">
+    <div>{{team.name}}</div>
+    <table class="table">
+        <thead>
+            <th>
+                DEF
+            </th>
+            <th>
+                MID
+            </th>
+            <th>
+                ATT
+            </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    {{team.defence}}
+                </td>
+                <td>
+                    {{team.midfield}}
+                </td>
+                <td>
+                    {{team.attack}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

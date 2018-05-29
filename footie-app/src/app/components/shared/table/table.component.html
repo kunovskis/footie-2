@@ -1,0 +1,17 @@
+<div *ngIf="players.length" class="player-table {{class}}">
+    <div class="table-header">{{tableHeader}}</div>
+    <table class="table">
+        <thead>
+            <th *ngFor="let player of players">
+                <img src="{{player.headshotImgUrl}}">
+            </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td *ngFor="let player of players" (click)="click(player)">
+                    {{player.basePlayer.fullName.firstName}} {{player.basePlayer.fullName.lastName}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

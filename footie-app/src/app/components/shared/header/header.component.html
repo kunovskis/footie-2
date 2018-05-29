@@ -1,0 +1,18 @@
+<div class="header">
+    <div class="dollars">
+        <img src="/assets/dollars.png">
+        <span> {{getDollars()}}</span>
+    </div>
+    <div class="coins">
+        <img src="/assets/coins.png">
+        <span> {{getCoins()}}</span>
+    </div>
+    <div class="user">
+        <span class="glyphicon glyphicon-user"></span>
+        <span> {{getUsername()}} </span>
+    </div>
+    <div class="logout" (click)="logout()">
+        <span class="glyphicon glyphicon-log-out"></span>
+        <span> Log Out </span>
+    </div>
+</div>

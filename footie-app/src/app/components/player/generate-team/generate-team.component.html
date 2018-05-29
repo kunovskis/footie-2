@@ -1,0 +1,7 @@
+<ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '14px' }"></ngx-loading>
+<span *ngIf="isListFilled()" class="generate-team">
+    <app-table [players]="GKs()" [class]="'first'" [tableHeader]="'GOALKEEPERS'"></app-table>
+    <app-table [players]="MIDs()" [class]="'second'" [tableHeader]="'DEFENDERS'"></app-table>
+    <app-table [players]="DEFs()" [class]="'third'" [tableHeader]="'MIDFIELDERS'"></app-table>
+    <app-table [players]="FWDs()" [class]="'fourth'" [tableHeader]="'FORWARDS'"></app-table>
+</span>

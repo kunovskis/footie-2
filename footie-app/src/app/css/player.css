@@ -1,0 +1,12 @@
+.play-component{
+    display: inline-block;
+    width: 50%;
+}
+
+.store-component{
+    display: inline-block;
+}
+
+.view-team {
+    display: inline-block;
+}

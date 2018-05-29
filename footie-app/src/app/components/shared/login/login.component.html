@@ -1,0 +1,22 @@
+<div class="form-container">
+    <form [formGroup]="form">
+        <div class="form-group" [ngClass]="{'has-error': form.controls['username'].invalid  && (form.controls['username'].touched && form.controls['username'].dirty)}">
+            <label>Username:</label>
+            <div>
+                <input class="form-control" placeholder="Username" formControlName="username" />
+            </div>
+        </div>
+        <div class="form-group" [ngClass]="{'has-error': form.controls['password'].invalid  && (form.controls['password'].touched && form.controls['password'].dirty)}">
+            <label>Password:</label>
+            <div>
+                <input class="form-control" placeholder="Password" formControlName="password" type="password" />
+            </div>
+        </div>
+        <div class="buttons-container">
+            <button class="btn btn-success" [disabled]="!form.valid" (click)="login()">Log In</button>
+            <hr/>
+            <div style="padding-bottom: 7.5px;">Don't have an account?</div>
+            <button class="btn btn-default" (click)="goToRegister()">Register</button>
+        </div>
+    </form>
+</div>

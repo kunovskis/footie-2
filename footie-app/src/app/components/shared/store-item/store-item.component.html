@@ -1,0 +1,20 @@
+<div class="store-item">
+    <div>{{storeItem.description}}</div>
+    <div *ngIf="storeItem.priceInCoins" class="buy-button">
+        <div (click)="buyWithCoins()">
+            <img src="/assets/coins.png"> {{storeItem.priceInCoins}}
+        </div>
+        <div (click)="buyWithDollars()">
+            <img src="/assets/dollars.png"> {{storeItem.priceInDollars}}
+        </div>
+    </div>
+    <div *ngIf="storeItem.priceInRealLife" class="buy-button">
+        <div (click)="buyInRealLife()">
+            <span class="glyphicon glyphicon-usd"></span>
+            {{storeItem.priceInRealLife}}
+        </div>
+    </div>
+</div>
+<div *ngIf="showPlayer">
+
+</div>
